@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/linearLayout2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/pre"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#00000000"
+            android:src="@drawable/pre"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#00000000"
+            android:src="@drawable/play"
+            android:scaleType="centerInside"/>
+
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#00000000"
+            android:src="@drawable/next"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/order"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#00000000"
+            android:src="@drawable/nor"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+</RelativeLayout>
